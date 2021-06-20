@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+    <link rel="stylesheet" href="css.css">
+    </head>
+<body>
+
+     
+    <button id="yes" onclick="switchimage()">button</button>
+    <button id="no" onclick="switchimage()">button_one</button>
+    <button id="unknown" onclick="switchimage()">button_two</button>
+    <img id="image_one" src="1.jpg">
+        
+    <audio controls autoplay>
+  <source src="music.ogv" type="audio/ogg">
+  <source src="music.ogv" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+    
+    <script>
+        var i=0;
+        var k=0;
+    function switchimage(){
+        while(i<3){
+        k=Math.floor(Math.random() * 10)+1;
+        k=k/3;
+        k=Math.floor(k);
+        if(i==0){
+           document.getElementById('image_one').src='2.jpg';
+            i++;
+            return;
+        }
+        if(i==1){
+           document.getElementById('image_one').src='3.jpg';
+            i++;
+            return;
+        }
+        if(i==2){
+            i++;
+            if(k==1){
+                document.getElementById('image_one').src='A.jpg';
+            }
+             else if(k==2){
+                document.getElementById('image_one').src='B.jpg';
+            }
+            else{
+                document.getElementById('image_one').src='C.jpg';
+            }
+            return;
+        }
+        }
+    }
+   
+    </script>
+    
+   
+    </body>

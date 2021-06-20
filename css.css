@@ -1,0 +1,34 @@
+#image_one{
+    width: 35vw;
+}
+#yes{
+    color: aqua;
+    width: 23vw;
+    height: 2.6vw;
+    position: absolute;
+    top: 39vw;
+    left: 7vw;
+    opacity: 0;
+}
+
+#no{
+    color: aqua;
+    width: 23vw;
+    height: 2.6vw;
+    position: absolute;
+    top: 43vw;
+    left: 7vw;
+    opacity: 0;
+}
+#unknown{
+    color: aqua;
+    width: 23vw;
+    height: 2.6vw;
+    position: absolute;
+    top: 47vw;
+    left: 7vw;
+    opacity: 0;
+}
+audio{
+    opacity: 1;
+}
